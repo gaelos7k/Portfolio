@@ -9,7 +9,7 @@ export function About() {
     {
       icon: Code,
       title: "Desenvolvimento",
-      description: "Especialista em React, Next.js, Node.js e TypeScript"
+      description: "Sólida experiência em React, Next.js, Node.js, TypeScript e JavaScript"
     },
     {
       icon: Palette,
@@ -39,7 +39,7 @@ export function About() {
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Apaixonado por tecnologia e inovação, transformo ideias em soluções digitais
-              que fazem a diferença no mundo.
+              que impactam e fazem a diferença pro seu negócio.
             </p>
           </div>
 
@@ -50,22 +50,21 @@ export function About() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Minha Jornada
-              </h3>
+              <div className="text-center">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Minha Jornada
+                </h3>
+              </div>
               <p className="text-gray-600 mb-4">
-                Comecei minha carreira como desenvolvedor frontend e rapidamente me apaixonei
-                pelo ecossistema JavaScript. Ao longo dos anos, evolui para full-stack,
-                trabalhando com as tecnologias mais modernas do mercado.
+                Comecei minha carreira como a maioria dos desenvolvedores, com HTML,
+                CSS e JavaScript, estudando por conta própria e em casa. Com o passar do tempo, comecei a cursar técnico em desenvolvimento de sistemas no Senac e em paralelo continuei estudando por conta própria. No curso pude ter contato com temas essenciais para o desenvolvedor que acabam passando em branco por acabar focando apenas no código, que são a gestão de projetos, prototipagem, planejamento e execução. Com o tempo evolui para full-stack, trabalhando com algumas das
+                tecnologias mais modernas do mercado, como React, Next.js, Node.js e TypeScript, Javascript, Python, MySQL e outras.
               </p>
               <p className="text-gray-600 mb-4">
-                Atualmente, foco em criar aplicações web escaláveis, performáticas e com
-                excelente experiência do usuário. Acredito que a tecnologia deve ser
-                acessível e intuitiva para todos.
+                Atualmente, sou estagiário com foco no desenvolvimento backend, desenvolvendo uma API restfull de um sistema comercial do zero escalável e robusto. Sendo desenvolvido com clean architecture e clean code, eu implementei repositórios de usuário, pessoas, produtos, categorias e arquivos, atualmente estou implementado repositório de leads. Nessas implementações, pude trabalhar com fastify, jwt, bcrypt, docker, vitest, postman, postgres, typescript, PrismaORM e outras tecnologias. Tenho foco em criar aplicações escaláveis e performáticas. 
               </p>
               <p className="text-gray-600">
-                Quando não estou codando, gosto de contribuir para projetos open source,
-                escrever artigos técnicos e compartilhar conhecimento com a comunidade.
+                Quando não estou codando, gosto de contribuir para projetos open source e compartilhar conhecimento com a comunidade.
               </p>
             </motion.div>
 

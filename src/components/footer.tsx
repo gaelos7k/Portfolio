@@ -9,17 +9,17 @@ export function Footer() {
   const socialLinks = [
     {
       icon: Github,
-      href: "#",
+      href: "https://github.com/gaelos7k",
       label: "GitHub"
     },
     {
       icon: Linkedin,
-      href: "#",
+      href: "https://www.linkedin.com/in/gabrielgonçalves0504/",
       label: "LinkedIn"
     },
     {
       icon: Mail,
-      href: "mailto:seu.email@exemplo.com",
+      href: "mailto:gabrielhenrique.dev0504@gmail.com",
       label: "Email"
     }
   ]
@@ -103,9 +103,9 @@ export function Footer() {
             >
               <h4 className="text-lg font-semibold mb-4">Contato</h4>
               <div className="space-y-2 text-gray-400">
-                <p>São Paulo, SP - Brasil</p>
-                <p>seu.email@exemplo.com</p>
-                <p>+55 (11) 99999-9999</p>
+                <p>Pouso Alegre, MG - Brasil</p>
+                <p>gabrielhenrique.dev0504@gmail.com</p>
+                <p>+55 (35) 98829-9016</p>
               </div>
             </motion.div>
           </div>
@@ -119,7 +119,7 @@ export function Footer() {
             className="border-t border-gray-800 pt-8 text-center"
           >
             <p className="text-gray-400 flex items-center justify-center gap-2">
-              Feito com <Heart className="text-red-500" size={16} /> por Seu Nome
+              Feito com <Heart className="text-red-500" size={16} /> por Gabriel Gonçalves
             </p>
             <p className="text-gray-500 text-sm mt-2">
               © {currentYear} Todos os direitos reservados.

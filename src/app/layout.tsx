@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Gabriel - Portfólio",
-  description: "Desenvolvedor Full Stack especializado em React, Next.js e TypeScript. Explore meus projetos e entre em contato.",
+  description: "Desenvolvedor Full Stack especializado em React, Next.js, TypeScript, JavaScript, Node.js. Explore meus projetos e entre em contato.",
   icons: {
     icon: "/web-development.svg",
   },

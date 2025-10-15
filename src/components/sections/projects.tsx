@@ -13,7 +13,7 @@ export function Projects() {
       technologies: ["Desenvolvimento de Sistemas", "Projetos Acadêmicos", "Lógica de Programação", "Análise de Sistemas"],
       githubUrl: "https://github.com/gaelos7k/Desenvolvimento-de-sistemas-Senac",
       liveUrl: "#",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=250&fit=crop&crop=center"
     },
     {
       title: "Sistema de Cadastro de Produtos",
@@ -35,9 +35,17 @@ export function Projects() {
       title: "Portfolio Website",
       description: "Website portfólio profissional com design moderno e responsivo. Implementa animações fluidas, navegação intuitiva e arquitetura de componentes reutilizáveis, demonstrando expertise em desenvolvimento front-end avançado e melhores práticas de UX/UI.",
       technologies: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "https://github.com/gaelos7k/Portfolio",
+      liveUrl: "https://www.gabrielgoncalves.tech/",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop&crop=center"
+    },
+    {
+      title: "Background Removal API",
+      description: "API para remoção de fundo de imagens, permitindo que os usuários enviem fotos e recebam versões editadas sem fundo. Desenvolvida com Python utilizando frameworks e bibliotecas especializadas em processamento de imagens, a API oferece endpoints RESTful para upload e download de imagens, além de documentação clara com FastAPI para facilitar a integração por desenvolvedores.",
+      technologies: ["Python", "FastAPI", "Pillow", "OpenCV"],
+      githubUrl: "https://github.com/G2J-Labs/bemasnap-backend-api",
+      liveUrl: "https://bemasnap-api.onrender.com",
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop&crop=center"
     }
   ]
 
@@ -123,7 +131,9 @@ export function Projects() {
             className="text-center mt-12"
           >
             <Button size="lg" variant="outline" className="cursor-pointer">
-              Ver mais projetos no GitHub
+              <a href="https://github.com/gaelos7k" target="_blank" rel="noopener noreferrer">
+                Ver mais projetos no GitHub
+              </a>
             </Button>
           </motion.div>
         </motion.div>
