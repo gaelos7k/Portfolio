@@ -12,7 +12,9 @@ export function Skills() {
         { name: "Next.js", level: 90 },
         { name: "TypeScript", level: 85 },
         { name: "Tailwind CSS", level: 90 },
-        { name: "JavaScript", level: 95 }
+        { name: "JavaScript", level: 95 },
+        { name: "CSS3", level: 90 },
+        { name: "HTML5", level: 95 }
       ]
     },
     {
@@ -21,8 +23,9 @@ export function Skills() {
         { name: "Node.js", level: 85 },
         { name: "Python", level: 80 },
         { name: "PostgreSQL", level: 75 },
-        { name: "MongoDB", level: 70 },
-        { name: "REST APIs", level: 90 }
+        { name: "MySQL", level: 70 },
+        { name: "REST APIs", level: 90 },
+        { name: "Fastify", level: 90 }
       ]
     },
     {
@@ -30,8 +33,7 @@ export function Skills() {
       skills: [
         { name: "Git", level: 90 },
         { name: "Docker", level: 70 },
-        { name: "AWS", level: 65 },
-        { name: "Figma", level: 80 },
+        { name: "Postman", level: 80 },
         { name: "VS Code", level: 95 }
       ]
     }

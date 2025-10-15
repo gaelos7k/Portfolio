@@ -63,21 +63,21 @@ export function Hero() {
             className="flex justify-center space-x-6"
           >
             <a
-              href="#"
+              href="https://github.com/gaelos7k"
               className="text-gray-400 hover:text-white transition-colors cursor-pointer"
               aria-label="GitHub"
             >
               <Github size={24} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/gabrielgonçalves0504/"
               className="text-gray-400 hover:text-white transition-colors cursor-pointer"
               aria-label="LinkedIn"
             >
               <Linkedin size={24} />
             </a>
             <a
-              href="#"
+              href="mailto:gabrielhenrique.dev0504@gmail.com"
               className="text-gray-400 hover:text-white transition-colors cursor-pointer"
               aria-label="Email"
             >

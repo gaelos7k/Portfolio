@@ -11,19 +11,19 @@ export function Contact() {
       icon: Mail,
       title: "Email",
       value: "gabrielhenrique.dev0504@gmail.com",
-      href: "mailto:seu.email@exemplo.com"
+      href: "mailto:gabrielhenrique.dev0504@gmail.com"
     },
     {
       icon: Phone,
       title: "Telefone",
       value: "+55 (35) 98829-9016",
-      href: "tel:+5511999999999"
+      href: "tel:+5535988299016"
     },
     {
       icon: MapPin,
       title: "Localização",
       value: "Pouso Alegre, MG - Brasil",
-      href: "#"
+      href: "#localizacao"
     }
   ]
 
