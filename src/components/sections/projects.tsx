@@ -43,7 +43,7 @@ export function Projects() {
       title: "Background Removal API",
       description: "API para remoção de fundo de imagens, permitindo que os usuários enviem fotos e recebam versões editadas sem fundo. Desenvolvida com Python utilizando frameworks e bibliotecas especializadas em processamento de imagens, a API oferece endpoints RESTful para upload e download de imagens, além de documentação clara com FastAPI para facilitar a integração por desenvolvedores.",
       technologies: ["Python", "FastAPI", "Pillow", "OpenCV"],
-      githubUrl: "https://github.com/G2J-Labs/bemasnap-backend-api",
+      githubUrl: "https://github.com/gaelos7k/Background-Removal-API.git",
       liveUrl: "https://bemasnap-api.onrender.com",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop&crop=center"
     }
