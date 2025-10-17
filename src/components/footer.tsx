@@ -119,7 +119,7 @@ export function Footer() {
             className="border-t border-gray-800 pt-8 text-center"
           >
             <p className="text-gray-400 flex items-center justify-center gap-2">
-              Feito com <Heart className="text-red-500" size={16} /> por Gabriel Gonçalves
+              Feito por Gabriel Gonçalves
             </p>
             <p className="text-gray-500 text-sm mt-2">
               © {currentYear} Todos os direitos reservados.
