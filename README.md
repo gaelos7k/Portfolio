@@ -1,15 +1,22 @@
-# Portfólio Pessoal - Next.js 14
+# Portfolio Gabriel Gonçalves
 
-Um portfólio pessoal moderno desenvolvido com as tecnologias mais atuais do mercado.
+Portfólio pessoal desenvolvido com as tecnologias mais modernas do mercado.
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias
 
-- **Next.js 14** - Framework React com App Router
-- **TypeScript** - Tipagem estática para maior segurança
+- **Next.js 15.5.9** - Framework React com SSR e SSG
+- **React 19.2.3** - Biblioteca JavaScript para interfaces
+- **TypeScript** - Superset JavaScript com tipagem estática
 - **Tailwind CSS** - Framework CSS utilitário
-- **Framer Motion** - Animações fluidas e interativas
-- **Lucide React** - Ícones modernos e consistentes
-- **Radix UI** - Componentes acessíveis e sem estilo
+- **Framer Motion** - Biblioteca de animações
+- **Lucide React** - Ícones modernos
+
+## 🔒 Segurança
+
+Este projeto está atualizado com as versões mais recentes que corrigem vulnerabilidades críticas:
+- **CVE-2025-55182 / CVE-2025-66478**: Vulnerabilidade crítica em React Server Components corrigida
+- React: 19.2.3 ✅
+- Next.js: 15.5.9 ✅
 
 ## 📁 Estrutura do Projeto
 
@@ -28,66 +35,42 @@ src/
     └── globals.css   # Estilos globais
 ```
 
-## 🛠️ Instalação e Execução
+## 📦 Instalação
 
-1. **Clone o repositório**
-   ```bash
-   git clone <seu-repositorio>
-   cd portfolio
-   ```
+```bash
+# Instalar dependências
+npm install
 
-2. **Instale as dependências**
-   ```bash
-   npm install
-   ```
+# Executar em desenvolvimento
+npm run dev
 
-3. **Execute o servidor de desenvolvimento**
-   ```bash
-   npm run dev
-   ```
+# Build para produção
+npm run build
 
-4. **Abra no navegador**
-   ```
-   http://localhost:3000
-   ```
+# Iniciar servidor de produção
+npm start
+```
 
-## 📱 Seções do Portfólio
+## 🎨 Funcionalidades
 
-- **Hero** - Apresentação com animações e call-to-actions
-- **About** - Informações pessoais e jornada profissional
-- **Skills** - Habilidades técnicas organizadas por categoria
-- **Projects** - Showcase dos projetos com links e tecnologias
-- **Contact** - Formulário de contato e informações
+- ✅ Design responsivo e moderno
+- ✅ Animações suaves com Framer Motion
+- ✅ Formulário de contato funcional
+- ✅ Seções: Hero, Sobre, Habilidades, Projetos, Contato
+- ✅ Otimização de imagens com Next.js Image
+- ✅ Links sociais integrados
+- ✅ Código limpo e organizado com constantes centralizadas
 
-## 🎨 Personalização
+## 👨‍💻 Autor
 
-Para personalizar o portfólio:
-
-1. **Informações pessoais**: Edite os componentes nas pastas `sections/`
-2. **Cores e tema**: Modifique as variáveis CSS em `globals.css`
-3. **Projetos**: Atualize a lista de projetos em `sections/projects.tsx`
-4. **Habilidades**: Ajuste as habilidades em `sections/skills.tsx`
-
-## 📦 Scripts Disponíveis
-
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Build para produção
-- `npm run start` - Inicia o servidor de produção
-- `npm run lint` - Executa o linter
-
-## 🚀 Deploy
-
-O projeto está pronto para deploy em qualquer plataforma que suporte Next.js:
-
-- **Vercel** (recomendado)
-- **Netlify**
-- **Railway**
-- **Heroku**
+**Gabriel Gonçalves**
+- Email: gabrielhenrique.dev0504@gmail.com
+- GitHub: [@gaelos7k](https://github.com/gaelos7k)
+- LinkedIn: [Gabriel Gonçalves](https://www.linkedin.com/in/gabrielgonçalves0504/)
+- Website: [gabrielgoncalves.tech](https://www.gabrielgoncalves.tech/)
 
 ## 📄 Licença
 
 Este projeto está sob a licença MIT.
 
----
-
-Desenvolvido com ❤️ usando Next.js 14
+MIT © 2024 Gabriel Gonçalves

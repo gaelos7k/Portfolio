@@ -1,8 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ChevronDown, Github, Linkedin, Mail } from "lucide-react"
+import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { PERSONAL_INFO } from "@/lib/constants"
+import { SocialLinks } from "@/components/social-links"
 
 export function Hero() {
   return (
@@ -22,7 +24,7 @@ export function Hero() {
           >
             Olá, eu sou{" "}
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Gabriel 
+              {PERSONAL_INFO.name.split(' ')[0]}
             </span>
           </motion.h1>
 
@@ -32,7 +34,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
           >
-            Desenvolvedor backend apaixonado por criar experiências digitais incríveis
+            {PERSONAL_INFO.role} apaixonado por criar experiências digitais incríveis
           </motion.p>
 
           <motion.div
@@ -51,8 +53,9 @@ export function Hero() {
             <Button 
               size="lg" 
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-slate-900 transition-all duration-300"
+              asChild
             >
-              Baixar CV
+              <a href={`mailto:${PERSONAL_INFO.email}`}>Entrar em contato</a>
             </Button>
           </motion.div>
 
@@ -60,29 +63,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex justify-center space-x-6"
+            className="flex justify-center"
           >
-            <a
-              href="https://github.com/gaelos7k"
-              className="text-gray-400 hover:text-white transition-colors cursor-pointer"
-              aria-label="GitHub"
-            >
-              <Github size={24} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/gabrielgonçalves0504/"
-              className="text-gray-400 hover:text-white transition-colors cursor-pointer"
-              aria-label="LinkedIn"
-            >
-              <Linkedin size={24} />
-            </a>
-            <a
-              href="mailto:gabrielhenrique.dev0504@gmail.com"
-              className="text-gray-400 hover:text-white transition-colors cursor-pointer"
-              aria-label="Email"
-            >
-              <Mail size={24} />
-            </a>
+            <SocialLinks />
           </motion.div>
         </motion.div>
 

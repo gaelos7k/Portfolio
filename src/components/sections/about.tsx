@@ -56,15 +56,20 @@ export function About() {
                 </h3>
               </div>
               <p className="text-gray-600 mb-4">
-                Comecei minha carreira como a maioria dos desenvolvedores, com HTML,
-                CSS e JavaScript, estudando por conta própria e em casa. Com o passar do tempo, comecei a cursar técnico em desenvolvimento de sistemas no Senac e em paralelo continuei estudando por conta própria. No curso pude ter contato com temas essenciais para o desenvolvedor que acabam passando em branco por acabar focando apenas no código, que são a gestão de projetos, prototipagem, planejamento e execução. Com o tempo evolui para full-stack, trabalhando com algumas das
-                tecnologias mais modernas do mercado, como React, Next.js, Node.js e TypeScript, Javascript, Python, MySQL e outras.
+                Comecei minha jornada na programação de forma autodidata, estudando HTML, CSS e JavaScript. 
+                Com o tempo, ingressei no curso técnico de Desenvolvimento de Sistemas no Senac, onde aprofundei 
+                conhecimentos em temas fundamentais como gestão de projetos, prototipagem, planejamento e execução.
               </p>
               <p className="text-gray-600 mb-4">
-                Atualmente, sou estagiário com foco no desenvolvimento backend, desenvolvendo uma API restfull de um sistema comercial do zero escalável e robusto. Sendo desenvolvido com clean architecture e clean code, eu implementei repositórios de usuário, pessoas, produtos, categorias e arquivos, atualmente estou implementado repositório de leads. Nessas implementações, pude trabalhar com fastify, jwt, bcrypt, docker, vitest, postman, postgres, typescript, PrismaORM e outras tecnologias. Tenho foco em criar aplicações escaláveis e performáticas. 
+                Evoluí para desenvolvimento full-stack, dominando tecnologias modernas como React, Next.js, Node.js, 
+                TypeScript, JavaScript, Python e bancos de dados relacionais (MySQL e PostgreSQL). Atualmente, 
+                atuo como estagiário com foco em backend, desenvolvendo APIs RESTful escaláveis e robustas.
               </p>
               <p className="text-gray-600">
-                Quando não estou codando, gosto de contribuir para projetos open source e compartilhar conhecimento com a comunidade.
+                No meu estágio, trabalho com arquitetura limpa (Clean Architecture e Clean Code), implementando 
+                repositórios para diferentes entidades do sistema. Tenho experiência prática com Fastify, JWT, 
+                bcrypt, Docker, Vitest, Postman, PostgreSQL, TypeScript e Prisma ORM. Busco sempre criar aplicações 
+                performáticas, escaláveis e seguindo as melhores práticas do mercado.
               </p>
             </motion.div>
 

@@ -1,28 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Github, Linkedin, Mail, Heart } from "lucide-react"
+import { PERSONAL_INFO } from "@/lib/constants"
+import { SocialLinks } from "@/components/social-links"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
-
-  const socialLinks = [
-    {
-      icon: Github,
-      href: "https://github.com/gaelos7k",
-      label: "GitHub"
-    },
-    {
-      icon: Linkedin,
-      href: "https://www.linkedin.com/in/gabrielgonçalves0504/",
-      label: "LinkedIn"
-    },
-    {
-      icon: Mail,
-      href: "mailto:gabrielhenrique.dev0504@gmail.com",
-      label: "Email"
-    }
-  ]
 
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -42,24 +25,11 @@ export function Footer() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-bold mb-4">Gabriel</h3>
+              <h3 className="text-2xl font-bold mb-4">{PERSONAL_INFO.name.split(' ')[0]}</h3>
               <p className="text-gray-400 mb-4">
-                Desenvolvedor Full Stack apaixonado por criar experiências digitais incríveis.
+                {PERSONAL_INFO.role} apaixonado por criar experiências digitais incríveis.
               </p>
-              <div className="flex space-x-4">
-                {socialLinks.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors cursor-pointer"
-                    aria-label={link.label}
-                  >
-                    <link.icon size={20} />
-                  </a>
-                ))}
-              </div>
+              <SocialLinks iconSize={20} />
             </motion.div>
 
             {/* Quick Links */}
@@ -103,9 +73,9 @@ export function Footer() {
             >
               <h4 className="text-lg font-semibold mb-4">Contato</h4>
               <div className="space-y-2 text-gray-400">
-                <p>Pouso Alegre, MG - Brasil</p>
-                <p>gabrielhenrique.dev0504@gmail.com</p>
-                <p>+55 (35) 98829-9016</p>
+                <p>{PERSONAL_INFO.location}</p>
+                <p>{PERSONAL_INFO.email}</p>
+                <p>{PERSONAL_INFO.phone}</p>
               </div>
             </motion.div>
           </div>
@@ -119,7 +89,7 @@ export function Footer() {
             className="border-t border-gray-800 pt-8 text-center"
           >
             <p className="text-gray-400 flex items-center justify-center gap-2">
-              Feito por Gabriel Gonçalves
+              Feito por {PERSONAL_INFO.name}
             </p>
             <p className="text-gray-500 text-sm mt-2">
               © {currentYear} Todos os direitos reservados.

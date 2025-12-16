@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
@@ -79,10 +80,12 @@ export function Projects() {
               >
                 <Card className="h-full overflow-hidden hover:shadow-xl transition-shadow duration-300">
                   <div className="aspect-video bg-gray-200 relative overflow-hidden">
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                     <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors duration-300" />
                   </div>
@@ -130,8 +133,8 @@ export function Projects() {
             viewport={{ once: true }}
             className="text-center mt-12"
           >
-            <Button size="lg" variant="outline" className="cursor-pointer">
-              <a href="https://github.com/gaelos7k" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" variant="outline" asChild>
+              <a href="https://github.com/gaelos7k" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
                 Ver mais projetos no GitHub
               </a>
             </Button>

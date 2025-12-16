@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { NAV_ITEMS } from "@/lib/constants"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,14 +18,6 @@ export function Navbar() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
-
-  const navItems = [
-    { name: "Início", href: "#hero" },
-    { name: "Sobre", href: "#about" },
-    { name: "Habilidades", href: "#skills" },
-    { name: "Projetos", href: "#projects" },
-    { name: "Contato", href: "#contact" }
-  ]
 
   const scrollToSection = (href: string) => {
     if (href === "#hero") {
@@ -75,7 +68,7 @@ export function Navbar() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="hidden md:flex items-center space-x-8"
           >
-            {navItems.map((item) => (
+            {NAV_ITEMS.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
@@ -116,7 +109,7 @@ export function Navbar() {
             className="md:hidden bg-white border-t"
           >
             <div className="px-4 py-4 space-y-4">
-              {navItems.map((item) => (
+              {NAV_ITEMS.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}

@@ -4,28 +4,42 @@ import { motion } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { PERSONAL_INFO } from "@/lib/constants"
 
 export function Contact() {
   const contactInfo = [
     {
       icon: Mail,
       title: "Email",
-      value: "gabrielhenrique.dev0504@gmail.com",
-      href: "mailto:gabrielhenrique.dev0504@gmail.com"
+      value: PERSONAL_INFO.email,
+      href: `mailto:${PERSONAL_INFO.email}`
     },
     {
       icon: Phone,
       title: "Telefone",
-      value: "+55 (35) 98829-9016",
-      href: "tel:+5535988299016"
+      value: PERSONAL_INFO.phone,
+      href: `tel:${PERSONAL_INFO.phone.replace(/\D/g, '')}`
     },
     {
       icon: MapPin,
       title: "Localização",
-      value: "Pouso Alegre, MG - Brasil",
-      href: "#localizacao"
+      value: PERSONAL_INFO.location,
+      href: "#contact"
     }
   ]
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const formData = new FormData(e.currentTarget)
+    const firstName = formData.get('firstName')
+    const lastName = formData.get('lastName')
+    const email = formData.get('email')
+    const subject = formData.get('subject')
+    const message = formData.get('message')
+    
+    const mailtoLink = `mailto:${PERSONAL_INFO.email}?subject=${encodeURIComponent(String(subject))}&body=${encodeURIComponent(`Nome: ${firstName} ${lastName}\nEmail: ${email}\n\n${message}`)}`
+    window.location.href = mailtoLink
+  }
 
   return (
     <section id="contact" className="py-12 sm:py-16 md:py-20 bg-gray-50">
@@ -105,7 +119,7 @@ export function Contact() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-4 sm:p-6">
-                  <form className="space-y-3 sm:space-y-4">
+                  <form className="space-y-3 sm:space-y-4" onSubmit={handleSubmit}>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                       <div>
                         <label htmlFor="firstName" className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">

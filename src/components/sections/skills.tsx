@@ -2,40 +2,21 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
+import { SKILLS } from "@/lib/constants"
 
 export function Skills() {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: [
-        { name: "React", level: 95 },
-        { name: "Next.js", level: 90 },
-        { name: "TypeScript", level: 85 },
-        { name: "Tailwind CSS", level: 90 },
-        { name: "JavaScript", level: 95 },
-        { name: "CSS3", level: 90 },
-        { name: "HTML5", level: 95 }
-      ]
+      skills: SKILLS.frontend
     },
     {
       title: "Backend",
-      skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "PostgreSQL", level: 75 },
-        { name: "MySQL", level: 70 },
-        { name: "REST APIs", level: 90 },
-        { name: "Fastify", level: 90 }
-      ]
+      skills: SKILLS.backend
     },
     {
       title: "Ferramentas",
-      skills: [
-        { name: "Git", level: 90 },
-        { name: "Docker", level: 70 },
-        { name: "Postman", level: 80 },
-        { name: "VS Code", level: 95 }
-      ]
+      skills: SKILLS.tools
     }
   ]
 
