@@ -94,6 +94,8 @@ export function Projects() {
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 50vw"
+                      loading="lazy"
+                      quality={85}
                     />
                     <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors duration-300" />
                   </div>
