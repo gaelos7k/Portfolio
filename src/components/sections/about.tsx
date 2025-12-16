@@ -8,18 +8,18 @@ export function About() {
   const skills = [
     {
       icon: Code,
-      title: "Desenvolvimento",
-      description: "Sólida experiência em React, Next.js, Node.js, TypeScript e JavaScript"
+      title: "Clean Architecture",
+      description: "Implementação completa com 4 camadas, SOLID principles e Dependency Injection"
     },
     {
       icon: Palette,
-      title: "Design",
-      description: "Foco em UI/UX com Tailwind CSS e design systems"
+      title: "Testes Automatizados",
+      description: "260+ testes (187 unitários + 73 integração) com 100% cobertura"
     },
     {
       icon: Zap,
-      title: "Performance",
-      description: "Otimização de aplicações web para máxima performance"
+      title: "APIs RESTful",
+      description: "Desenvolvimento de sistemas escaláveis com Fastify, Prisma e PostgreSQL"
     }
   ]
 
@@ -56,20 +56,29 @@ export function About() {
                 </h3>
               </div>
               <p className="text-gray-600 mb-4">
-                Comecei minha jornada na programação de forma autodidata, estudando HTML, CSS e JavaScript. 
-                Com o tempo, ingressei no curso técnico de Desenvolvimento de Sistemas no Senac, onde aprofundei 
-                conhecimentos em temas fundamentais como gestão de projetos, prototipagem, planejamento e execução.
+                Sou <strong>Bacharel em Administração de Empresas</strong>, com experiência em gestão, atendimento e 
+                operação de negócios no Sebrae Minas e em empresa familiar. Atualmente em <strong>transição de carreira 
+                para tecnologia</strong>, estudei Técnico em Desenvolvimento de Sistemas no Senac, aprofundando conhecimentos 
+                em lógica de programação, Python, JavaScript, POO e metodologias de desenvolvimento.
               </p>
               <p className="text-gray-600 mb-4">
-                Evoluí para desenvolvimento full-stack, dominando tecnologias modernas como React, Next.js, Node.js, 
-                TypeScript, JavaScript, Python e bancos de dados relacionais (MySQL e PostgreSQL). Atualmente, 
-                atuo como estagiário com foco em backend, desenvolvendo APIs RESTful escaláveis e robustas.
+                Desde <strong>setembro de 2025</strong>, atuo como <strong>estagiário fullstack</strong> (com foco em backend), 
+                desenvolvendo do zero um sistema comercial completo com <strong>Clean Architecture</strong>. Implementei 
+                múltiplos <strong>casos de uso</strong>, <strong>repositórios</strong> e <strong>módulos completos</strong> 
+                (Autenticação, Categorias, Produtos, Leads, Arquivos) aplicando padrões como Adapter Pattern, Dependency Injection 
+                e Multi-tenancy.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Tenho experiência prática com <strong>Fastify, Prisma ORM, PostgreSQL, TypeScript, JWT, Zod, Docker</strong> 
+                e integração com <strong>AWS S3</strong>. Desenvolvi sistema de upload com streaming, migração de dados complexa, 
+                e implementei <strong>testes automatizados</strong> com Vitest, alcançando alta cobertura e seguindo boas práticas 
+                de engenharia de software.
               </p>
               <p className="text-gray-600">
-                No meu estágio, trabalho com arquitetura limpa (Clean Architecture e Clean Code), implementando 
-                repositórios para diferentes entidades do sistema. Tenho experiência prática com Fastify, JWT, 
-                bcrypt, Docker, Vitest, Postman, PostgreSQL, TypeScript e Prisma ORM. Busco sempre criar aplicações 
-                performáticas, escaláveis e seguindo as melhores práticas do mercado.
+                Como <strong>desenvolvedor fullstack</strong>, trabalho com <strong>Vue 3, Bulma CSS, SCSS</strong> e 
+                <strong> TypeScript</strong> no frontend, além de <strong>React e Next.js</strong> em projetos pessoais. 
+                Também desenvolvo ferramentas internas com <strong>PHP e Composer</strong>, demonstrando versatilidade 
+                para resolver problemas com diferentes tecnologias conforme a necessidade do projeto.
               </p>
             </motion.div>
 

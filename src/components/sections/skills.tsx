@@ -7,12 +7,12 @@ import { SKILLS } from "@/lib/constants"
 export function Skills() {
   const skillCategories = [
     {
-      title: "Frontend",
-      skills: SKILLS.frontend
-    },
-    {
       title: "Backend",
       skills: SKILLS.backend
+    },
+    {
+      title: "Frontend",
+      skills: SKILLS.frontend
     },
     {
       title: "Ferramentas",

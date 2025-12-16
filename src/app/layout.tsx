@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gabriel - Portfólio",
-  description: "Desenvolvedor Full Stack especializado em React, Next.js, TypeScript, JavaScript, Node.js. Explore meus projetos e entre em contato.",
+  title: "Gabriel Gonçalves - Desenvolvedor Fullstack",
+  description: "Desenvolvedor Fullstack com foco em Backend. Especializado em Clean Architecture, APIs RESTful escaláveis, Node.js, TypeScript, Vue.js, Fastify e PostgreSQL. 260+ testes automatizados e boas práticas de engenharia de software.",
   icons: {
     icon: "/web-development.svg",
   },

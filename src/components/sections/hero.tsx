@@ -34,7 +34,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
           >
-            {PERSONAL_INFO.role} apaixonado por criar experiências digitais incríveis
+            {PERSONAL_INFO.tagline}
           </motion.p>
 
           <motion.div

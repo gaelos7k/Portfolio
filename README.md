@@ -1,6 +1,6 @@
 # Portfolio Gabriel Gonçalves
 
-Portfólio pessoal desenvolvido com as tecnologias mais modernas do mercado.
+Portfólio pessoal de um Desenvolvedor Fullstack com foco em Backend, especializado em Clean Architecture e boas práticas de engenharia de software.
 
 ## 🚀 Tecnologias
 
@@ -17,6 +17,14 @@ Este projeto está atualizado com as versões mais recentes que corrigem vulnera
 - **CVE-2025-55182 / CVE-2025-66478**: Vulnerabilidade crítica em React Server Components corrigida
 - React: 19.2.3 ✅
 - Next.js: 15.5.9 ✅
+
+## 💼 Sobre o Desenvolvedor
+
+**Gabriel Gonçalves** - Desenvolvedor Fullstack (Foco Backend)
+- 📚 Bacharel em Administração de Empresas
+- 💻 Estagiário Fullstack desde setembro/2025
+- 🎯 Especializado em Clean Architecture, APIs RESTful e testes automatizados
+- 🛠️ Stack: Node.js, TypeScript, Vue.js, Fastify, Prisma, PostgreSQL, PHP, Python
 
 ## 📁 Estrutura do Projeto
 
@@ -56,10 +64,12 @@ npm start
 - ✅ Design responsivo e moderno
 - ✅ Animações suaves com Framer Motion
 - ✅ Formulário de contato funcional
-- ✅ Seções: Hero, Sobre, Habilidades, Projetos, Contato
+- ✅ Seções: Hero, Sobre, Destaques Profissionais, Habilidades, Projetos, Contato
 - ✅ Otimização de imagens com Next.js Image
 - ✅ Links sociais integrados
-- ✅ Código limpo e organizado com constantes centralizadas
+- ✅ Código limpo com constantes centralizadas
+- ✅ Projetos reais documentados
+- ✅ Experiência fullstack destacada (Backend, Frontend, Ferramentas)
 
 ## 👨‍💻 Autor
 

@@ -9,44 +9,52 @@ import { ExternalLink, Github } from "lucide-react"
 export function Projects() {
   const projects = [
     {
-      title: "Desenvolvimento de Sistemas - Senac",
-      description: "Repositório abrangente contendo todo o conteúdo estudado durante 1 ano e meio do curso técnico de Desenvolvimento de Sistemas do Senac Minas em Pouso Alegre. Engloba projetos práticos, exercícios acadêmicos e implementações que demonstram evolução técnica em desenvolvimento de software, desde conceitos fundamentais até aplicações avançadas.",
-      technologies: ["Desenvolvimento de Sistemas", "Projetos Acadêmicos", "Lógica de Programação", "Análise de Sistemas"],
-      githubUrl: "https://github.com/gaelos7k/Desenvolvimento-de-sistemas-Senac",
-      liveUrl: "#",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=250&fit=crop&crop=center"
+      title: "Sistema Comercial - API RESTful",
+      description: "API completa desenvolvida com Clean Architecture, incluindo autenticação JWT, CRUD de categorias, produtos, leads e arquivos. Implementa multi-tenancy, Dependency Injection, Adapter Pattern e upload com streaming para S3. Testes automatizados com alta cobertura.",
+      technologies: ["Node.js", "TypeScript", "Fastify", "Prisma", "PostgreSQL", "Docker", "Vitest", "AWS S3", "Clean Architecture"],
+      githubUrl: "",
+      liveUrl: "",
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop&crop=center"
     },
     {
-      title: "Sistema de Cadastro de Produtos",
-      description: "Sistema web completo para gerenciamento de produtos desenvolvido como projeto acadêmico de recuperação em Programação Orientada a Objetos. Implementa operações CRUD completas com interface responsiva, validação robusta de dados e armazenamento local, demonstrando proficiência em desenvolvimento web full-stack com tecnologias fundamentais.",
-      technologies: ["HTML", "CSS", "JavaScript", "Programação Orientada a Objetos"],
-      githubUrl: "https://github.com/gaelos7k/UC4---POO",
-      liveUrl: "https://gaelos7k.github.io/UC4---POO/",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop&crop=center"
+      title: "Migração de Dados Complexa",
+      description: "Script avançado para migração massiva de dados do WordPress/MySQL para PostgreSQL. Implementa tratamento de concorrência com promise pool, validação de URLs, sanitização de arquivos, múltiplas transações atômicas e garantia de integridade dos dados.",
+      technologies: ["TypeScript", "Prisma", "PostgreSQL", "Streams", "Concorrência", "Promise Pool"],
+      githubUrl: "",
+      liveUrl: "",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center"
     },
     {
-      title: "API Back-end com Node.js",
-      description: "API RESTful desenvolvida durante imersão técnica especializada em back-end. Implementa arquitetura de servidor robusta com roteamento, middleware e manipulação de dados, demonstrando habilidades em desenvolvimento de serviços web escaláveis e integração de sistemas.",
-      technologies: ["Node.js", "JavaScript", "API", "Back-end"],
-      githubUrl: "https://github.com/gaelos7k/imersaoBackAndAlura",
-      liveUrl: "#",
-      image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=250&fit=crop&crop=center"
+      title: "Interfaces Comerciais PHP",
+      description: "Conjunto de ferramentas internas para equipe comercial incluindo: API de consulta a polos educacionais, API de consulta a conversas no WhatsApp, sistema de consulta de leads e interfaces de consulta ao banco de dados. Desenvolvido com PHP, Bulma CSS e Composer.",
+      technologies: ["PHP", "Bulma CSS", "Composer", "MySQL", "REST APIs"],
+      githubUrl: "",
+      liveUrl: "",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center"
     },
     {
-      title: "Portfolio Website",
-      description: "Website portfólio profissional com design moderno e responsivo. Implementa animações fluidas, navegação intuitiva e arquitetura de componentes reutilizáveis, demonstrando expertise em desenvolvimento front-end avançado e melhores práticas de UX/UI.",
-      technologies: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
-      githubUrl: "https://github.com/gaelos7k/Portfolio",
-      liveUrl: "https://www.gabrielgoncalves.tech/",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop&crop=center"
+      title: "E-commerce Vue 3",
+      description: "Desenvolvimento frontend para plataforma de e-commerce com Vue 3, TypeScript e SCSS. Implementa componentes responsivos mobile-first, simuladores educacionais, snippets dinâmicos e integração com webhooks externos. Usa Bun como runtime.",
+      technologies: ["Vue 3", "TypeScript", "SCSS", "Bun", "Responsive Design", "Webhooks"],
+      githubUrl: "",
+      liveUrl: "",
+      image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&h=250&fit=crop&crop=center"
     },
     {
       title: "Background Removal API",
-      description: "API para remoção de fundo de imagens, permitindo que os usuários enviem fotos e recebam versões editadas sem fundo. Desenvolvida com Python utilizando frameworks e bibliotecas especializadas em processamento de imagens, a API oferece endpoints RESTful para upload e download de imagens, além de documentação clara com FastAPI para facilitar a integração por desenvolvedores.",
-      technologies: ["Python", "FastAPI", "Pillow", "OpenCV"],
+      description: "API para remoção de fundo de imagens, permitindo que os usuários enviem fotos e recebam versões editadas sem fundo. Desenvolvida com Python utilizando frameworks e bibliotecas especializadas em processamento de imagens, oferece endpoints RESTful com documentação clara usando FastAPI.",
+      technologies: ["Python", "FastAPI", "Pillow", "OpenCV", "Image Processing"],
       githubUrl: "https://github.com/gaelos7k/Background-Removal-API.git",
       liveUrl: "https://bemasnap-api.onrender.com",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop&crop=center"
+    },
+    {
+      title: "Portfolio Website",
+      description: "Website portfólio profissional com design moderno e responsivo. Implementa animações fluidas com Framer Motion, navegação intuitiva, componentes reutilizáveis e formulário de contato funcional. Atualizado com correções de vulnerabilidades críticas (CVE-2025-55182).",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      githubUrl: "https://github.com/gaelos7k/Portfolio",
+      liveUrl: "https://www.gabrielgoncalves.tech/",
+      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop&crop=center"
     }
   ]
 
@@ -107,18 +115,25 @@ export function Projects() {
                       ))}
                     </div>
                     <div className="flex gap-3">
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-                          <Github className="w-4 h-4 mr-2" />
-                          Código
-                        </a>
-                      </Button>
-                      <Button size="sm" asChild>
-                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-                          <ExternalLink className="w-4 h-4 mr-2" />
-                          Demo
-                        </a>
-                      </Button>
+                      {project.githubUrl && (
+                        <Button variant="outline" size="sm" asChild>
+                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                            <Github className="w-4 h-4 mr-2" />
+                            Código
+                          </a>
+                        </Button>
+                      )}
+                      {project.liveUrl && (
+                        <Button size="sm" asChild>
+                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                            <ExternalLink className="w-4 h-4 mr-2" />
+                            Demo
+                          </a>
+                        </Button>
+                      )}
+                      {!project.githubUrl && !project.liveUrl && (
+                        <span className="text-sm text-gray-500 italic">Projeto privado da organização</span>
+                      )}
                     </div>
                   </CardContent>
                 </Card>

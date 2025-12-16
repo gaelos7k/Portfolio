@@ -1,7 +1,8 @@
 // Informações pessoais centralizadas
 export const PERSONAL_INFO = {
   name: "Gabriel Gonçalves",
-  role: "Desenvolvedor Backend",
+  role: "Desenvolvedor Fullstack",
+  tagline: "Especializado em Clean Architecture, APIs RESTful e testes automatizados | Foco em Backend",
   email: "gabrielhenrique.dev0504@gmail.com",
   phone: "+55 (35) 98829-9016",
   location: "Pouso Alegre, MG - Brasil",
@@ -21,27 +22,30 @@ export const NAV_ITEMS = [
 
 // Habilidades técnicas
 export const SKILLS = {
-  frontend: [
-    { name: "React", level: 95 },
-    { name: "Next.js", level: 90 },
-    { name: "TypeScript", level: 85 },
-    { name: "Tailwind CSS", level: 90 },
-    { name: "JavaScript", level: 95 },
-    { name: "CSS3", level: 90 },
-    { name: "HTML5", level: 95 }
-  ],
   backend: [
-    { name: "Node.js", level: 85 },
+    { name: "Node.js", level: 90 },
+    { name: "TypeScript", level: 90 },
+    { name: "Fastify", level: 90 },
+    { name: "Prisma ORM", level: 90 },
+    { name: "PostgreSQL", level: 85 },
     { name: "Python", level: 80 },
-    { name: "PostgreSQL", level: 75 },
-    { name: "MySQL", level: 70 },
-    { name: "REST APIs", level: 90 },
-    { name: "Fastify", level: 90 }
+    { name: "PHP", level: 75 },
+    { name: "Clean Architecture", level: 85 }
+  ],
+  frontend: [
+    { name: "Vue 3", level: 80 },
+    { name: "React", level: 85 },
+    { name: "Next.js", level: 85 },
+    { name: "TypeScript", level: 90 },
+    { name: "Bulma CSS", level: 80 },
+    { name: "SCSS", level: 80 }
   ],
   tools: [
     { name: "Git", level: 90 },
-    { name: "Docker", level: 70 },
-    { name: "Postman", level: 80 },
-    { name: "VS Code", level: 95 }
+    { name: "Docker", level: 80 },
+    { name: "Vitest", level: 85 },
+    { name: "Postman", level: 85 },
+    { name: "Redis", level: 70 },
+    { name: "AWS S3", level: 75 }
   ]
 } as const
