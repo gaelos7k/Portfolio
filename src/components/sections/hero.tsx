@@ -8,8 +8,14 @@ import { SocialLinks } from "@/components/social-links"
 
 export function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      <div className="container mx-auto px-4 text-center">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 relative overflow-hidden">
+      {/* Elementos decorativos de fundo */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-sky-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-blue-500/5 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -23,7 +29,7 @@ export function Hero() {
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6"
           >
             Olá, eu sou{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
               {PERSONAL_INFO.name.split(' ')[0]}
             </span>
           </motion.h1>
@@ -45,7 +51,7 @@ export function Hero() {
           >
             <Button 
               size="lg" 
-              className="bg-purple-600 hover:bg-purple-700 text-white border-0 cursor-pointer"
+              className="bg-sky-600 hover:bg-sky-700 text-white border-0 cursor-pointer shadow-lg shadow-sky-600/30 transition-all hover:shadow-xl hover:shadow-sky-600/40"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Ver meus projetos

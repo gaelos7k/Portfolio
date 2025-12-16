@@ -93,8 +93,8 @@ export function About() {
                 <Card key={index} className="border-0 shadow-lg">
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4">
-                      <div className="p-3 bg-purple-100 rounded-lg">
-                        <skill.icon className="w-6 h-6 text-purple-600" />
+                      <div className="p-3 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex-shrink-0">
+                        <skill.icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-900">{skill.title}</h4>

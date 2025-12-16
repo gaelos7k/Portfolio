@@ -72,7 +72,7 @@ export function Skills() {
                           </div>
                           <div className="w-full bg-gray-200 rounded-full h-2">
                             <motion.div
-                              className="bg-purple-600 h-2 rounded-full"
+                              className="bg-gradient-to-r from-sky-500 to-blue-600 h-2 rounded-full"
                               initial={{ width: 0 }}
                               whileInView={{ width: `${skill.level}%` }}
                               transition={{ duration: 1, delay: skillIndex * 0.1 }}

@@ -72,7 +72,7 @@ export function Navbar() {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className={`text-sm font-medium transition-colors hover:text-purple-600 cursor-pointer ${
+                className={`text-sm font-medium transition-colors hover:text-sky-600 cursor-pointer ${
                   isScrolled ? "text-gray-700" : "text-white"
                 }`}
               >
@@ -113,7 +113,7 @@ export function Navbar() {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left text-gray-700 hover:text-purple-600 transition-colors py-2 cursor-pointer"
+                  className="block w-full text-left text-gray-700 hover:text-sky-600 transition-colors py-2 cursor-pointer"
                 >
                   {item.name}
                 </button>

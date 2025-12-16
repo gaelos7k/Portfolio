@@ -84,14 +84,14 @@ export function Contact() {
                     <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                       <CardContent className="p-4 sm:p-6">
                         <div className="flex items-center space-x-3 sm:space-x-4">
-                          <div className="p-2.5 sm:p-3 bg-purple-100 rounded-lg flex-shrink-0">
-                            <info.icon className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" />
+                          <div className="p-2.5 sm:p-3 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex-shrink-0">
+                            <info.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                           </div>
                           <div className="min-w-0 flex-1">
                             <h4 className="font-semibold text-gray-900 text-sm sm:text-base">{info.title}</h4>
                             <a
                               href={info.href}
-                              className="text-gray-600 hover:text-purple-600 transition-colors cursor-pointer text-xs sm:text-sm break-words"
+                              className="text-gray-600 hover:text-sky-600 transition-colors cursor-pointer text-xs sm:text-sm break-words"
                             >
                               {info.value}
                             </a>
@@ -129,9 +129,9 @@ export function Contact() {
                           type="text"
                           id="firstName"
                           name="firstName"
-                          className="w-full px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                          placeholder="Seu nome"
-                        />
+                        className="w-full px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
+                        placeholder="Seu nome"
+                      />
                       </div>
                       <div>
                         <label htmlFor="lastName" className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
@@ -141,9 +141,9 @@ export function Contact() {
                           type="text"
                           id="lastName"
                           name="lastName"
-                          className="w-full px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                          placeholder="Seu sobrenome"
-                        />
+                        className="w-full px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
+                        placeholder="Seu sobrenome"
+                      />
                       </div>
                     </div>
                     <div>
@@ -154,7 +154,7 @@ export function Contact() {
                         type="email"
                         id="email"
                         name="email"
-                        className="w-full px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                        className="w-full px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
                         placeholder="seu.email@exemplo.com"
                       />
                     </div>
@@ -166,7 +166,7 @@ export function Contact() {
                         type="text"
                         id="subject"
                         name="subject"
-                        className="w-full px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                        className="w-full px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
                         placeholder="Assunto da mensagem"
                       />
                     </div>
@@ -178,11 +178,11 @@ export function Contact() {
                         id="message"
                         name="message"
                         rows={4}
-                        className="w-full px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none"
+                        className="w-full px-3 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent resize-none"
                         placeholder="Digite sua mensagem aqui..."
                       />
                     </div>
-                    <Button type="submit" className="w-full bg-purple-600 hover:bg-purple-700 text-sm sm:text-base py-2.5 sm:py-2">
+                    <Button type="submit" className="w-full bg-sky-600 hover:bg-sky-700 text-sm sm:text-base py-2.5 sm:py-2">
                       <Send className="w-4 h-4 mr-2" />
                       Enviar Mensagem
                     </Button>
