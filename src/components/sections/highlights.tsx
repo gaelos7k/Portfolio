@@ -21,14 +21,14 @@ export function Highlights() {
     {
       icon: Database,
       title: "Stack Fullstack",
-      value: "Backend + Frontend",
+      value: "Versatilidade",
       description: "Node, Vue, PHP, Python, PostgreSQL"
     },
     {
       icon: Code2,
-      title: "Experiência",
-      value: "3+ Meses",
-      description: "Desde setembro/2025"
+      title: "Padrões Avançados",
+      value: "Clean Code",
+      description: "SOLID, DI, Multi-tenancy, Adapters"
     }
   ]
 
