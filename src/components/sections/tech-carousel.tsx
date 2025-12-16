@@ -65,13 +65,13 @@ export function TechCarousel() {
         <motion.div
           className="flex gap-8"
           animate={{
-            x: [0, -1920], // Ajustar baseado no tamanho total
+            x: [0, -2400],
           }}
           transition={{
             x: {
               repeat: Infinity,
               repeatType: "loop",
-              duration: 30,
+              duration: 40,
               ease: "linear",
             },
           }}
