@@ -66,7 +66,7 @@ export function Skills() {
                             <span className="text-sm font-medium text-gray-700">
                               {skill.name}
                             </span>
-                            <span className="text-sm text-gray-500">
+                            <span className="text-sm text-gray-600">
                               {skill.level}%
                             </span>
                           </div>

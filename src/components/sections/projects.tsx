@@ -134,7 +134,7 @@ export function Projects() {
                         </Button>
                       )}
                       {!project.githubUrl && !project.liveUrl && (
-                        <span className="text-sm text-gray-500 italic">Projeto privado da organização</span>
+                        <span className="text-sm text-gray-600 italic">Projeto privado da organização</span>
                       )}
                     </div>
                   </CardContent>

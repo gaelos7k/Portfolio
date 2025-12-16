@@ -26,7 +26,7 @@ export function Footer() {
               viewport={{ once: true }}
             >
               <h3 className="text-2xl font-bold mb-4">{PERSONAL_INFO.name.split(' ')[0]}</h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-300 mb-4">
                 Desenvolvedor Fullstack focado em backend, clean code e arquitetura escalável.
               </p>
               <SocialLinks iconSize={20} />
@@ -42,22 +42,22 @@ export function Footer() {
               <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#about" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
+                  <a href="#about" className="text-gray-300 hover:text-white transition-colors cursor-pointer">
                     Sobre
                   </a>
                 </li>
                 <li>
-                  <a href="#skills" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
+                  <a href="#skills" className="text-gray-300 hover:text-white transition-colors cursor-pointer">
                     Habilidades
                   </a>
                 </li>
                 <li>
-                  <a href="#projects" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
+                  <a href="#projects" className="text-gray-300 hover:text-white transition-colors cursor-pointer">
                     Projetos
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
+                  <a href="#contact" className="text-gray-300 hover:text-white transition-colors cursor-pointer">
                     Contato
                   </a>
                 </li>
@@ -72,7 +72,7 @@ export function Footer() {
               viewport={{ once: true }}
             >
               <h4 className="text-lg font-semibold mb-4">Contato</h4>
-              <div className="space-y-2 text-gray-400">
+              <div className="space-y-2 text-gray-300">
                 <p>{PERSONAL_INFO.location}</p>
                 <p>{PERSONAL_INFO.email}</p>
                 <p>{PERSONAL_INFO.phone}</p>
@@ -88,10 +88,10 @@ export function Footer() {
             viewport={{ once: true }}
             className="border-t border-gray-800 pt-8 text-center"
           >
-            <p className="text-gray-400 flex items-center justify-center gap-2">
+            <p className="text-gray-300 flex items-center justify-center gap-2">
               Feito por {PERSONAL_INFO.name}
             </p>
-            <p className="text-gray-500 text-sm mt-2">
+            <p className="text-gray-600 text-sm mt-2">
               © {currentYear} Todos os direitos reservados.
             </p>
           </motion.div>

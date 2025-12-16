@@ -56,6 +56,7 @@ export function Navbar() {
               className={`text-2xl font-bold transition-colors hover:text-purple-400 cursor-pointer ${
                 isScrolled ? "text-gray-900" : "text-white"
               }`}
+              aria-label="Voltar ao topo da página"
             >
               Portfolio
             </button>
@@ -75,6 +76,7 @@ export function Navbar() {
                 className={`text-sm font-medium transition-colors hover:text-sky-600 cursor-pointer ${
                   isScrolled ? "text-gray-700" : "text-white"
                 }`}
+                aria-label={`Navegar para ${item.name}`}
               >
                 {item.name}
               </button>
@@ -114,6 +116,7 @@ export function Navbar() {
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
                   className="block w-full text-left text-gray-700 hover:text-sky-600 transition-colors py-2 cursor-pointer"
+                  aria-label={`Navegar para ${item.name}`}
                 >
                   {item.name}
                 </button>

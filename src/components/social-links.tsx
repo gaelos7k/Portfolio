@@ -39,7 +39,7 @@ export function SocialLinks({ className = "", iconSize = 24 }: SocialLinksProps)
           href={link.href}
           target={link.href.startsWith('mailto') ? undefined : "_blank"}
           rel={link.href.startsWith('mailto') ? undefined : "noopener noreferrer"}
-          className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+          className="text-gray-300 hover:text-white transition-colors cursor-pointer"
           aria-label={link.label}
         >
           <link.icon size={iconSize} />
