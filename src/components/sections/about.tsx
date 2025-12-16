@@ -55,30 +55,20 @@ export function About() {
                   Minha Jornada
                 </h3>
               </div>
-              <p className="text-gray-600 mb-4">
-                Sou <strong>Bacharel em Administração de Empresas</strong>, com experiência em gestão, atendimento e 
-                operação de negócios no Sebrae Minas e em empresa familiar. Atualmente em <strong>transição de carreira 
-                para tecnologia</strong>, estudei Técnico em Desenvolvimento de Sistemas no Senac, aprofundando conhecimentos 
-                em lógica de programação, Python, JavaScript, POO e metodologias de desenvolvimento.
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                <span className="font-bold text-sky-600">Bacharel em Administração</span> em transição para tecnologia. 
+                Atuo como <span className="font-bold text-sky-600">estagiário fullstack</span> desenvolvendo sistema comercial 
+                completo com <span className="font-bold text-sky-600">Clean Architecture</span>.
               </p>
-              <p className="text-gray-600 mb-4">
-                Desde <strong>setembro de 2025</strong>, atuo como <strong>estagiário fullstack</strong> (com foco em backend), 
-                desenvolvendo do zero um sistema comercial completo com <strong>Clean Architecture</strong>. Implementei 
-                múltiplos <strong>casos de uso</strong>, <strong>repositórios</strong> e <strong>módulos completos</strong> 
-                (Autenticação, Categorias, Produtos, Leads, Arquivos) aplicando padrões como Adapter Pattern, Dependency Injection 
-                e Multi-tenancy.
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                Implementei casos de uso e módulos completos (Autenticação, Categorias, Produtos, 
+                Leads, Arquivos) aplicando <span className="font-bold text-sky-600">SOLID, Dependency Injection, Adapter Pattern</span> e 
+                <span className="font-bold text-sky-600"> Multi-tenancy</span>.
               </p>
-              <p className="text-gray-600 mb-4">
-                Tenho experiência prática com <strong>Fastify, Prisma ORM, PostgreSQL, TypeScript, JWT, Zod, Docker</strong> 
-                e integração com <strong>AWS S3</strong>. Desenvolvi sistema de upload com streaming, migração de dados complexa, 
-                e implementei <strong>testes automatizados</strong> com Vitest, alcançando alta cobertura e seguindo boas práticas 
-                de engenharia de software.
-              </p>
-              <p className="text-gray-600">
-                Como <strong>desenvolvedor fullstack</strong>, trabalho com <strong>Vue 3, Bulma CSS, SCSS</strong> e 
-                <strong> TypeScript</strong> no frontend, além de <strong>React e Next.js</strong> em projetos pessoais. 
-                Também desenvolvo ferramentas internas com <strong>PHP e Composer</strong>, demonstrando versatilidade 
-                para resolver problemas com diferentes tecnologias conforme a necessidade do projeto.
+              <p className="text-gray-600 leading-relaxed">
+                Stack: <span className="font-bold text-sky-600">Node.js, Fastify, Prisma, PostgreSQL, Vue 3, TypeScript, 
+                Docker, AWS S3, Vitest, React, Next.js, PHP, Python</span>. Focado em testes automatizados e 
+                <span className="font-bold text-sky-600"> alta cobertura de código</span>.
               </p>
             </motion.div>
 

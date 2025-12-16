@@ -60,20 +60,21 @@ export function Highlights() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="bg-white border-slate-200 hover:shadow-xl hover:border-sky-300 transition-all duration-300 h-full">
-                  <CardContent className="p-6 text-center">
-                    <div className="flex justify-center mb-4">
-                      <div className="p-3 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl shadow-lg">
-                        <highlight.icon className="w-8 h-8 text-white" />
+                <Card className="bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-300 h-full overflow-hidden group">
+                  <CardContent className="p-8 text-center relative">
+                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sky-500 to-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                    <div className="flex justify-center mb-6">
+                      <div className="p-4 bg-gradient-to-br from-sky-500 to-blue-600 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <highlight.icon className="w-10 h-10 text-white" />
                       </div>
                     </div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                    <h3 className="text-3xl font-bold text-slate-900 mb-3">
                       {highlight.value}
                     </h3>
-                    <p className="text-sm font-semibold text-sky-600 mb-2">
+                    <p className="text-base font-semibold text-sky-600 mb-3">
                       {highlight.title}
                     </p>
-                    <p className="text-xs text-slate-600">
+                    <p className="text-sm text-slate-600">
                       {highlight.description}
                     </p>
                   </CardContent>

@@ -29,7 +29,7 @@ export function Hero() {
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6"
           >
             Olá, eu sou{" "}
-            <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="text-white">
               {PERSONAL_INFO.name.split(' ')[0]}
             </span>
           </motion.h1>
@@ -69,23 +69,26 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex justify-center"
+            className="flex justify-center mb-8"
           >
             <SocialLinks />
           </motion.div>
-        </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        >
-          <ChevronDown
-            size={32}
-            className="text-white animate-bounce cursor-pointer"
-            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-          />
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+            className="flex justify-center"
+          >
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+              className="cursor-pointer"
+              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <ChevronDown className="w-8 h-8 text-white" />
+            </motion.div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
