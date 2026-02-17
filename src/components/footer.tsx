@@ -27,7 +27,7 @@ export function Footer() {
             >
               <h3 className="text-2xl font-bold mb-4">{PERSONAL_INFO.name.split(' ')[0]}</h3>
               <p className="text-gray-300 mb-4">
-                Desenvolvedor Fullstack focado em backend, clean code e arquitetura escalável.
+                Desenvolvedor Web focado em backend, clean code e arquitetura escalável.
               </p>
               <SocialLinks iconSize={20} />
             </motion.div>
