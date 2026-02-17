@@ -9,12 +9,12 @@ export function About() {
     {
       icon: Code,
       title: "Clean Architecture",
-      description: "Implementação completa com 4 camadas, SOLID principles e Dependency Injection"
+      description: "Separação das responsabiliades de módulos entre camadas"
     },
     {
       icon: Palette,
-      title: "Testes Automatizados",
-      description: "260+ testes (187 unitários + 73 integração) com 100% cobertura"
+      title: "Front-end",
+      description: "Desenvolvimento de landing pages comerciais e email marketing"
     },
     {
       icon: Zap,
@@ -38,8 +38,8 @@ export function About() {
               Sobre Mim
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Apaixonado por tecnologia e inovação, transformo ideias em soluções digitais
-              que impactam e fazem a diferença pro seu negócio.
+              Apaixonado por tecnologia e inovação desde sempre, transformo ideias em soluções digitais
+              que impactam e fazem a diferença real.
             </p>
           </div>
 
@@ -56,8 +56,8 @@ export function About() {
                 </h3>
               </div>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                <span className="font-bold text-sky-600">Bacharel em Administração</span> em transição para tecnologia. 
-                Atuo como <span className="font-bold text-sky-600">estagiário fullstack</span> desenvolvendo sistema comercial 
+                <span className="font-bold text-sky-600">Desenvolvedor web </span> 
+                atuando no <span className="font-bold text-sky-600">frontend</span> desenvolvendo principalmente landing pages com next e email marketing e com mais foco e afinadade com o <span className="font-bold text-sky-600">back-end</span> desenvolvendo sistema comercial 
                 completo com <span className="font-bold text-sky-600">Clean Architecture</span>.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
