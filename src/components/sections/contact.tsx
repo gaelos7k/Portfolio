@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
-import { PERSONAL_INFO } from "@/lib/constants"
+import { PERSONAL_INFO } from "@/lib/constants/personal-info"
 
 export function Contact() {
   const contactInfo = [

@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail, LucideIcon } from "lucide-react"
-import { PERSONAL_INFO } from "@/lib/constants"
+import { PERSONAL_INFO } from "@/lib/constants/personal-info"
 
 interface SocialLink {
   icon: LucideIcon

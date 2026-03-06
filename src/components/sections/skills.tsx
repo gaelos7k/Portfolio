@@ -2,24 +2,9 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
-import { SKILLS } from "@/lib/constants"
+import { SKILL_GROUPS } from "@/lib/constants/skills"
 
 export function Skills() {
-  const skillCategories = [
-    {
-      title: "Backend",
-      skills: SKILLS.backend
-    },
-    {
-      title: "Frontend",
-      skills: SKILLS.frontend
-    },
-    {
-      title: "Ferramentas",
-      skills: SKILLS.tools
-    }
-  ]
-
   return (
     <section id="skills" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -40,7 +25,7 @@ export function Skills() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {skillCategories.map((category, categoryIndex) => (
+            {SKILL_GROUPS.map((category, categoryIndex) => (
               <motion.div
                 key={category.title}
                 initial={{ opacity: 0, y: 20 }}
@@ -62,22 +47,15 @@ export function Skills() {
                           transition={{ duration: 0.6, delay: skillIndex * 0.1 }}
                           viewport={{ once: true }}
                         >
-                          <div className="flex justify-between items-center mb-2">
+                          <div className="flex items-center gap-2">
                             <span className="text-sm font-medium text-gray-700">
                               {skill.name}
                             </span>
-                            <span className="text-sm text-gray-600">
-                              {skill.level}%
-                            </span>
-                          </div>
-                          <div className="w-full bg-gray-200 rounded-full h-2">
-                            <motion.div
-                              className="bg-gradient-to-r from-sky-500 to-blue-600 h-2 rounded-full"
-                              initial={{ width: 0 }}
-                              whileInView={{ width: `${skill.level}%` }}
-                              transition={{ duration: 1, delay: skillIndex * 0.1 }}
-                              viewport={{ once: true }}
-                            />
+                            {skill.experience && (
+                              <span className="text-xs px-2 py-0.5 bg-sky-100 text-sky-700 rounded-full">
+                                {skill.experience}
+                              </span>
+                            )}
                           </div>
                         </motion.div>
                       ))}
