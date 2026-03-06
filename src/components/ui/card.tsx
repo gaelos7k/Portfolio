@@ -1,6 +1,23 @@
 import * as React from "react"
 import { cn } from "@/lib/utils"
 
+/**
+ * Card - Componente de container elevado
+ * 
+ * Usa design tokens para background, bordas e sombras.
+ * Composição: Card > CardHeader > CardTitle + CardDescription > CardContent > CardFooter
+ * 
+ * @example
+ * ```tsx
+ * <Card>
+ *   <CardHeader>
+ *     <CardTitle>Título</CardTitle>
+ *     <CardDescription>Descrição</CardDescription>
+ *   </CardHeader>
+ *   <CardContent>Conteúdo</CardContent>
+ * </Card>
+ * ```
+ */
 const Card = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -8,7 +25,7 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "rounded-lg border bg-card text-card-foreground shadow-sm",
+      "rounded-lg border border-neutral-700 bg-card text-card-foreground shadow-md hover:shadow-lg hover:border-primary-600/50 transition-all duration-base",
       className
     )}
     {...props}
@@ -16,18 +33,24 @@ const Card = React.forwardRef<
 ))
 Card.displayName = "Card"
 
+/**
+ * CardHeader - Cabeçalho do card
+ */
 const CardHeader = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex flex-col space-y-1.5 p-6", className)}
+    className={cn("flex flex-col space-y-2 p-6", className)}
     {...props}
   />
 ))
 CardHeader.displayName = "CardHeader"
 
+/**
+ * CardTitle - Título do card
+ */
 const CardTitle = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLHeadingElement>
@@ -35,7 +58,7 @@ const CardTitle = React.forwardRef<
   <h3
     ref={ref}
     className={cn(
-      "text-2xl font-semibold leading-none tracking-tight",
+      "text-2xl font-semibold leading-none tracking-tight text-neutral-50",
       className
     )}
     {...props}
@@ -43,6 +66,9 @@ const CardTitle = React.forwardRef<
 ))
 CardTitle.displayName = "CardTitle"
 
+/**
+ * CardDescription - Descrição/subtítulo do card
+ */
 const CardDescription = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLParagraphElement>
@@ -55,6 +81,9 @@ const CardDescription = React.forwardRef<
 ))
 CardDescription.displayName = "CardDescription"
 
+/**
+ * CardContent - Conteúdo principal do card
+ */
 const CardContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -63,13 +92,16 @@ const CardContent = React.forwardRef<
 ))
 CardContent.displayName = "CardContent"
 
+/**
+ * CardFooter - Rodapé do card (ações, botões)
+ */
 const CardFooter = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex items-center p-6 pt-0", className)}
+    className={cn("flex items-center gap-4 p-6 pt-0", className)}
     {...props}
   />
 ))
