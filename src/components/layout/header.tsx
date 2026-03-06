@@ -6,7 +6,16 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { NAV_ITEMS } from "@/lib/constants/navigation"
 
-export function Navbar() {
+/**
+ * Header - Navegação principal do site
+ * 
+ * Features:
+ * - Sticky header com backdrop blur
+ * - Menu mobile responsivo
+ * - Smooth scroll para seções
+ * - Animações de entrada
+ */
+export function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -21,7 +30,6 @@ export function Navbar() {
 
   const scrollToSection = (href: string) => {
     if (href === "#hero") {
-      // Scroll to top for hero section
       window.scrollTo({ top: 0, behavior: "smooth" })
     } else {
       const element = document.querySelector(href)
@@ -33,17 +41,17 @@ export function Navbar() {
   }
 
   return (
-    <motion.nav
+    <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg"
+          ? "bg-neutral-900/95 backdrop-blur-md shadow-lg border-b border-neutral-800"
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <nav className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <motion.div
@@ -53,8 +61,8 @@ export function Navbar() {
           >
             <button
               onClick={() => scrollToSection("#hero")}
-              className={`text-2xl font-bold transition-colors hover:text-purple-400 cursor-pointer ${
-                isScrolled ? "text-gray-900" : "text-white"
+              className={`text-2xl font-bold transition-colors hover:text-primary-500 cursor-pointer ${
+                isScrolled ? "text-neutral-50" : "text-white"
               }`}
               aria-label="Voltar ao topo da página"
             >
@@ -73,8 +81,8 @@ export function Navbar() {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className={`text-sm font-medium transition-colors hover:text-sky-600 cursor-pointer ${
-                  isScrolled ? "text-gray-700" : "text-white"
+                className={`text-sm font-medium transition-colors hover:text-primary-500 cursor-pointer ${
+                  isScrolled ? "text-neutral-300" : "text-white"
                 }`}
                 aria-label={`Navegar para ${item.name}`}
               >
@@ -94,7 +102,7 @@ export function Navbar() {
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
-              className={isScrolled ? "text-gray-700" : "text-white"}
+              className={isScrolled ? "text-neutral-50" : "text-white"}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
@@ -108,14 +116,14 @@ export function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white border-t"
+            className="md:hidden bg-neutral-800 border-t border-neutral-700"
           >
             <div className="px-4 py-4 space-y-4">
               {NAV_ITEMS.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left text-gray-700 hover:text-sky-600 transition-colors py-2 cursor-pointer"
+                  className="block w-full text-left text-neutral-300 hover:text-primary-500 transition-colors py-2 cursor-pointer"
                   aria-label={`Navegar para ${item.name}`}
                 >
                   {item.name}
@@ -124,7 +132,7 @@ export function Navbar() {
             </div>
           </motion.div>
         )}
-      </div>
-    </motion.nav>
+      </nav>
+    </motion.header>
   )
 }
