@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { PERSONAL_INFO } from "@/lib/constants"
+import { PERSONAL_INFO } from "@/lib/constants/personal-info"
 import { SocialLinks } from "@/components/social-links"
 
 export function Footer() {

@@ -1,37 +1,22 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { 
-  SiNodedotjs, 
-  SiTypescript, 
-  SiReact, 
-  SiNextdotjs, 
-  SiVuedotjs, 
-  SiPostgresql, 
-  SiPrisma, 
-  SiDocker, 
-  SiGit, 
-  SiFastify,
-  SiPhp,
-  SiPython
-} from "react-icons/si"
-import type { IconType } from "react-icons"
 
 export function TechCarousel() {
-  // Lista de tecnologias com seus ícones reais
-  const technologies: Array<{ name: string; icon: IconType; color: string }> = [
-    { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
-    { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-    { name: "React", icon: SiReact, color: "#61DAFB" },
-    { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
-    { name: "Vue.js", icon: SiVuedotjs, color: "#4FC08D" },
-    { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
-    { name: "Prisma", icon: SiPrisma, color: "#2D3748" },
-    { name: "Docker", icon: SiDocker, color: "#2496ED" },
-    { name: "Git", icon: SiGit, color: "#F05032" },
-    { name: "Fastify", icon: SiFastify, color: "#000000" },
-    { name: "PHP", icon: SiPhp, color: "#777BB4" },
-    { name: "Python", icon: SiPython, color: "#3776AB" },
+  // Lista de tecnologias
+  const technologies = [
+    "Node.js",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Vue.js",
+    "PostgreSQL",
+    "Prisma",
+    "Docker",
+    "Git",
+    "Fastify",
+    "PHP",
+    "Python",
   ]
 
   // Duplicar array para criar efeito infinito suave
@@ -76,29 +61,19 @@ export function TechCarousel() {
             },
           }}
         >
-          {duplicatedTechs.map((tech, index) => {
-            const IconComponent = tech.icon
-            return (
-              <motion.div
-                key={`${tech.name}-${index}`}
-                className="flex-shrink-0 w-40 h-40 flex flex-col items-center justify-center bg-slate-50 rounded-2xl transition-all duration-300 group"
-                whileHover={{
-                  scale: 1.1,
-                }}
-              >
-                <motion.div
-                  className="mb-3 transition-all duration-300"
-                  initial={{ color: "#0ea5e9" }}
-                  whileHover={{ color: tech.color }}
-                >
-                  <IconComponent className="w-16 h-16" />
-                </motion.div>
-                <span className="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">
-                  {tech.name}
-                </span>
-              </motion.div>
-            )
-          })}
+          {duplicatedTechs.map((tech, index) => (
+            <motion.div
+              key={`${tech}-${index}`}
+              className="flex-shrink-0 w-40 h-40 flex items-center justify-center bg-slate-50 rounded-2xl transition-all duration-300 hover:bg-slate-100 group"
+              whileHover={{
+                scale: 1.1,
+              }}
+            >
+              <span className="text-lg font-semibold text-gray-700 group-hover:text-gray-900 transition-colors">
+                {tech}
+              </span>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>

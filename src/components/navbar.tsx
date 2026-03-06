@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { NAV_ITEMS } from "@/lib/constants"
+import { NAV_ITEMS } from "@/lib/constants/navigation"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
